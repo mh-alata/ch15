@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/weatherbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/cloudy" />
+
+    <!--display the temperature-->
+    <TextView   android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:gravity="center_horizontal"
+        android:text="XX °C"
+        android:layout_below="@+id/description"
+        android:textSize="90sp" />
+
+    <!--display the weather description-->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="no weather"
+        android:textSize="40sp"
+
+        />
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/description"
+        android:text="no weather"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="5dp"
+        android:text="humidity : "
+        android:textAlignment="textStart"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sunRise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidity"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Sunrise : "
+        android:textAlignment="textStart"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sunSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunRise"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Sunset : "
+        android:textAlignment="textStart"
+        android:textSize="20sp" />
+
+    <!--background image-->
+
+
+
+
+
+
+</RelativeLayout>
