@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">ch15</string>
+
+
+
+        <string-array name="city">
+            <item>Riyadh</item>
+            <item>Dammam</item>
+            <item>Jeddah</item>
+            <item>Yanbu</item>
+            <item>Hail</item>
+            <item>Arar</item>
+            <item>Khobar</item>
+            <item>Jizan</item>
+            <item>Paris</item>
+            <item>London</item>
+            <item>New York</item>
+            <item>Tokyo</item>
+            <item>Moscow</item>
+        </string-array>
+
 </resources>
+

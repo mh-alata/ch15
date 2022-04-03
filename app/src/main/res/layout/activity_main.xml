@@ -14,13 +14,15 @@
         app:srcCompat="@drawable/cloudy" />
 
     <!--display the temperature-->
-    <TextView   android:id="@+id/temperature"
+    <TextView
+        android:id="@+id/temperature"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="100dp"
         android:gravity="center_horizontal"
         android:text="XX °C"
-        android:layout_below="@+id/description"
+        android:textColor="@color/black"
         android:textSize="90sp" />
 
     <!--display the weather description-->
@@ -28,57 +30,99 @@
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/spinner"
         android:gravity="center_horizontal"
         android:text="no weather"
         android:textSize="40sp"
 
         />
+
     <TextView
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:gravity="center_horizontal"
         android:layout_below="@+id/description"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
         android:text="no weather"
-        android:textSize="20sp"
+        android:textColor="@color/black"
 
-        />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/humidity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/temperature"
-        android:layout_marginTop="100dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
         android:text="humidity : "
         android:textAlignment="textStart"
 
-        android:textSize="20sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/sunRise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/humidity"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:text="Sunrise : "
         android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/sunSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sunRise"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:text="Sunset : "
         android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunSet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="windSpeed : "
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/selCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Select City"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selCity"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/feels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:gravity="center_horizontal"
+        android:text="feels_like"
+        android:textColor="@color/black" />
+
 
     <!--background image-->
 
